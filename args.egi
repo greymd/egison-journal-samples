@@ -1,0 +1,4 @@
+#!/usr/bin/env egison
+(define $main
+  (lambda [$args]
+    (display args)))

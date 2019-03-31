@@ -1,0 +1,15 @@
+#!/usr/bin/env egison
+(define $main
+  (lambda [$args]
+    (display stdin)))
+
+(define $stdin
+  (take-while
+    1#(not (eq? <EOF> %1))
+    (recursive-read read-line)))
+
+(define $recursive-read
+  (lambda [$proc] {(if (io (eof?))
+                       <EOF>
+                       (io (proc)))
+                   @(recursive-read proc)}))

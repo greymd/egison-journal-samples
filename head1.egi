@@ -1,0 +1,6 @@
+#!/usr/bin/env egison
+(load-file "./stdin.egi")
+(define $main
+  (lambda [$args]
+    (each print (take 10 stdin))))
+

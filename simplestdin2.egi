@@ -1,0 +1,5 @@
+#!/usr/bin/env egison
+(load-file "./stdin.egi")
+(define $main
+  (lambda [$args]
+    (display stdin)))

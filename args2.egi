@@ -1,0 +1,4 @@
+#!/usr/bin/env egison
+(define $main
+  (lambda [$args]
+    (print (S.concat {" arg1:" (nth 1 args) " arg2:" (nth 2 args)}))))

@@ -1,0 +1,8 @@
+#!/usr/bin/env egison
+
+(define $main
+  (lambda [$args]
+    (do {
+       [$line (read-line)]
+       (print line)
+       })))

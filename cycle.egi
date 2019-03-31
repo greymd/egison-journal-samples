@@ -1,0 +1,7 @@
+#!/usr/bin/env egison
+(load-file "./stdin.egi")
+(define $main
+  (lambda [$args]
+    (each print
+          (match-all stdin (list string)
+            [<join $a $b > (S.concat {@b @a})]))))
